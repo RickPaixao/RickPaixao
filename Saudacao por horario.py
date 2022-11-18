@@ -1,9 +1,3 @@
-'''
-Faça um programa que pergunte a hora ao usuário e, baseando-se no horário
-descrito, exiba a saudação apropriada.
-EX: Bom dia = 0. Game:00 as 11:59, Boa tarde = 12:00 às 17:59, Boa noite = 18:00 as 23:59.
-'''
-
 nome = input('Ola, digite seu nome: ')
 print()
 print(f'Ola {nome}, tudo bem?...')
