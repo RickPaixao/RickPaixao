@@ -1,6 +1,7 @@
 print('Vamos brincar de Forca.')
 print()
-sct = input(f'Digite uma palavra chave: ')
+sct = input(f'Digite uma palavra chave: ').lower()
+print('\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n')
 digitadas = []
 chances = 5
 
