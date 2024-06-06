@@ -1,16 +1,21 @@
+import os
+def dele():
+    os.system('clear') or None
+
 print('Vamos brincar de Forca.')
 print()
 sct = input(f'Digite uma palavra chave: ').lower()
-print('\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n')
+
+dele()
+
 digitadas = []
 chances = 5
-
+print(f'Você tem {chances} chances.\nA palavra tem {len(sct)} letras')
 while True:
     if chances <= 0:
         print(f'Você perdeu!!!')
         break
-
-    ltr = input(f'Digite uma letra: ')
+    ltr = input(f'Digite uma letra: ').lower()
     print()
     if ltr == sct:
         print(f'Boa!!!\nvocê acertou de uma vez só a palavra "{sct.title()}" de uma vez só')
@@ -21,12 +26,12 @@ while True:
     digitadas.append(ltr)
 
     if ltr in sct:
+        dele()
         print(f'Boa, tem a letra "{ltr.title()}"')
-
     else:
+        dele()
         print(f'Não tem a letra "{ltr.title()}"')
         digitadas.pop()
-
     sct1 = ''
     for ltr_crt in sct:
         if ltr_crt in digitadas:
